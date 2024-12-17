@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetic Prediction Model</title>
+    <!-- Link the CSS file -->
+    <!--link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}-->
+    <link rel="stylesheet"  href="./static/styles.css">
+</head>
+<body>
+    <div class="login">
+        <h1>Diabetic Prediction Model</h1>
+        <form action="/predict" method="post">
+            <input type="text" name="Glucose level" placeholder="Glucose level" required="required" />
+            <input type="text" name="BloodPressure value" placeholder="BloodPressure value" required="required" />
+            <input type="text" name="SkinThickness value" placeholder="SkinThickness value" required="required" />
+            <input type="text" name="Insulin level" placeholder="Insulin level" required="required" />
+            <input type="text" name="BMI value" placeholder="BMI value" required="required" />
+            <input type="text" name="Diabetes Pedigree Function level" placeholder="Diabetes Pedigree Function level" required="required" />
+            <input type="text" name="Age of Person" placeholder="Age of Person" required="required" />
+            <button type="submit">Predict</button>
+        </form>
+        <!-- Display the prediction result dynamically -->
+        
+    </div>
+</body>
+</html>
